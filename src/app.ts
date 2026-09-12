@@ -13,6 +13,11 @@ import { notFound } from "./app/middleware/notFound";
 import { AuthRoutes } from "./app/module/auth/auth.route";
 import z from "zod";
 import { UserRoutes } from "./app/module/user/user.route";
+import { AppointementRoutes } from "./app/module/appointment/appointment.route";
+import { ScheduleRoutes } from "./app/module/schedule/schedule.route";
+import { PaymentRoutes } from "./app/module/payment/payment.route";
+import { PrescriptionRoutes } from "./app/module/prescription/prescription.route";
+import { AnalyticsRoutes } from "./app/module/analytics/analytics.route";
 
 const app: Application = express();
 
