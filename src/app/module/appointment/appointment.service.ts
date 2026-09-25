@@ -9,12 +9,11 @@ import {
 } from "../../../generated/prisma/enums";
 import type { ApppointmentWhereInput } from "../../../generated/prisma/models";
 import config from "../../config";
-import type { IQuery } from "../../interfaces";
+import type { IQuery, RequestUser } from "../../interfaces";
 import { getBkashIdToken } from "../../lib/bkash";
 import { transporter } from "../../lib/nodemailer";
 import { prisma } from "../../lib/prisma";
-import type { RequestUser } from "../../middleware/checkAuth";
-import { AppError } from "../../utils/AppError";
+ import { AppError } from "../../utils/AppError";
 import type {
 	IBookAppointmentPayload,
 	ICancelAppointmentPayload,

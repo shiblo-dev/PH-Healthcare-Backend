@@ -2,7 +2,7 @@ import { Router } from "express";
 import { Role } from "../../../generated/prisma/enums";
 import { upload } from "../../lib/multer";
 import { auth } from "../../middleware/checkAuth";
- import { DoctorController } from "./doctor.controller";
+import { DoctorController } from "./doctor.controller";
 import { UpdateDoctorProfileValidationZodSchema } from "./doctor.validation";
 import { validateRequest } from "../../middleware/validatedRequest";
 
@@ -51,14 +51,8 @@ router.get(
 	DoctorController.getAvailableDoctorByTodaysSchedule,
 );
 
-router.get(
-	"/public/all-doctors",
-	DoctorController.getAllDoctorsListPublic,
-);
+router.get("/public/all-doctors", DoctorController.getAllDoctorsListPublic);
 
-router.get(
-	"/public/:doctorId",
-	DoctorController.getSingleDoctorPublicProfile,
-);
+router.get("/public/:doctorId", DoctorController.getSingleDoctorPublicProfile);
 
 export const DoctorRoutes = router;

@@ -6,8 +6,8 @@ import {
 	ScheduleStatus,
 } from "../../../generated/prisma/enums";
 import { prisma } from "../../lib/prisma";
-import type { RequestUser } from "../../middleware/checkAuth";
-import { AppError } from "../../utils/AppError";
+ import { AppError } from "../../utils/AppError";
+import { RequestUser } from "../../interfaces";
 
 const getAdminAnalytics = async () => {
 	//total doctors

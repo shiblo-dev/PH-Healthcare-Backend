@@ -18,6 +18,7 @@ import { ScheduleRoutes } from "./app/module/schedule/schedule.route";
 import { PaymentRoutes } from "./app/module/payment/payment.route";
 import { PrescriptionRoutes } from "./app/module/prescription/prescription.route";
 import { AnalyticsRoutes } from "./app/module/analytics/analytics.route";
+import { DoctorRoutes } from "./app/module/doctor/doctor.route";
 
 const app: Application = express();
 

@@ -6,9 +6,9 @@ import config from "../../config";
 import { cloudinary } from "../../lib/cloudinary";
 import { transporter } from "../../lib/nodemailer";
 import { prisma } from "../../lib/prisma";
-import type { RequestUser } from "../../middleware/checkAuth";
-import { AppError } from "../../utils/AppError";
+ import { AppError } from "../../utils/AppError";
 import type { ICreatePrescriptionPayload } from "./prescription.interface";
+import { RequestUser } from "../../interfaces";
 
 const createPrescription = async (
 	payload: ICreatePrescriptionPayload,

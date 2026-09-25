@@ -8,10 +8,9 @@ import {
 import httpStatus from "http-status";
 import { ScheduleStatus } from "../../../generated/prisma/enums";
 import type { ScheduleWhereInput } from "../../../generated/prisma/models";
-import type { IQuery } from "../../interfaces";
+import type { IQuery, RequestUser } from "../../interfaces";
 import { prisma } from "../../lib/prisma";
-import type { RequestUser } from "../../middleware/checkAuth";
-import { AppError } from "../../utils/AppError";
+ import { AppError } from "../../utils/AppError";
 import type {
 	ICreateSchedulePayload,
 	IUpdateSchedulePayload,
